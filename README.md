@@ -83,4 +83,4 @@ start_time_local,end_time_local,duration_s,avg_dbfs,peak_dbfs,threshold_dbfs,blo
 
 ---
 
-Built by [Wiaczeslaw Cyunczyk](https://cyunczyk.dev)
+Built by [Wiaczeslaw Cyunczyk](https://tslava.dev)
