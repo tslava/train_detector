@@ -1,6 +1,13 @@
 # Train Detector
 
-Detect passing trains using your Mac's microphone. The application monitors ambient audio levels and logs detected train events to a CSV file for analysis.
+**Counts the trains passing your window, using nothing but a Mac microphone.** It tracks the ambient sound level in real time, recognises a train as a sustained rise above a threshold and appends each event (start, end, duration, average and peak level) to a CSV you can chart in any spreadsheet.
+
+```bash
+uv sync
+uv run python main.py   # Ctrl+C to stop
+```
+
+**Stack:** Python 3.12 · sounddevice (PortAudio) · NumPy · uv
 
 ## Why?
 
@@ -15,7 +22,7 @@ If you live near train tracks and want to track train frequency, duration, or no
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/train_detector.git
+git clone https://github.com/tslava/train_detector.git
 cd train_detector
 uv sync
 ```
@@ -72,4 +79,8 @@ start_time_local,end_time_local,duration_s,avg_dbfs,peak_dbfs,threshold_dbfs,blo
 
 ## License
 
-MIT
+[MIT](LICENSE)
+
+---
+
+Built by [Wiaczeslaw Cyunczyk](https://cyunczyk.dev)
